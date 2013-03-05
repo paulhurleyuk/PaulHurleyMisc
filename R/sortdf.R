@@ -5,7 +5,6 @@
 #' @return A sorted dataframe
 #' @author "Paul Hurley"
 #' @export
-#' @
 #' @usage with(dataframe,sortframe(dataframe,column1, column2, column3))
 #' @examples with(iris,sortframe(iris,Sepal.Length,Sepal.Width,Petal.Length))
 sortframe<-function(df,...){df[do.call(order,list(...)),]}

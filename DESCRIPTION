@@ -1,9 +1,16 @@
 Package: PaulHurleyMisc
 Type: Package
 Title: Yet Another Misc Utilities from Paul Hurley
-Version: 0.1
+Version: 0.1.0
 Date: 2013-03-03
 Author: Paul Hurley <paul@paulhurley.co.uk>
 Maintainer: Paul Hurley <paul@paulhurley.co.uk>
 Description: Just a test package
 License: None
+Collate:
+    'cleandf.R'
+    'dataset.R'
+    'sortdf.R'
+    'Lund.R'
+    'invquad.R'
+    'pastewrap.R'

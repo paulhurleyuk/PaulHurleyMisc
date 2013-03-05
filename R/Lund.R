@@ -36,19 +36,19 @@ fsignif<-function(x, digits=3){
 
 #' Calculates a Critical value for Outlier Test according to Lund
 #' 
+#' @references Richard E Lund. Tables for an approximate test for outliers in linear models.
+#'  Technometrics,17(4):473-476, 1975.
+#' P Prescott. An approximate test for outliers in linear models. Technometrics, 
+#' 17(1):129-132,1975.
 #' @param a Chosen alpha value
 #' @param n Number of Data Elements
 #' @param q Number of Independent Variables (including Intercept)
 #' @return The Critical Value
 #' @author Paul Hurley
+#' @aliases lundprob
 #' @export
-#' 
-#' Richard E Lund. Tables for an approximate test for outliers in linear models.
-#'  Technometrics,17(4):473-476, 1975.
-#' P Prescott. An approximate test for outliers in linear models. Technometrics, 
-#' 17(1):129-132,1975.
-#' 
 #' @examples
+#' data(phosphorus)
 #' phoslm<-lm(Y~X1+X2,data=phosphorus)
 #' summary(phoslm)
 #' phosphorus$fitted<-fitted(phoslm)
@@ -72,6 +72,7 @@ lundcrit<-function(a, n, q) {
   return(crit)
 }
 
+#' @export
 lundprob<-function(crit, n, q){
   # Calculates an alpha value for a matchinv studantized residual
   #

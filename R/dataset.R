@@ -7,7 +7,6 @@
 #'   \item Y - Response 
 #'   \item X1 - Variable 1
 #'   \item X2 - Variable 2
-#'   ...
 #' }
 #' 
 #' @docType data
@@ -27,7 +26,6 @@ NULL
 #'   \item Units - The units of concentration
 #'   \item Rep - Replicate number of the measurement
 #'   \item Actual - The actual reading
-#'   ...
 #' }
 #' 
 #' @docType data
