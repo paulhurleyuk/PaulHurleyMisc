@@ -46,6 +46,7 @@ pBias<-function(x, nominal, na.rm=FALSE){
 #' @param q Number of Independent Variables (including Intercept)
 #' @return The Critical Value
 #' @author Paul Hurley
+#' @rdname lund
 #' @aliases lundprob
 #' @export
 #' @examples
@@ -73,6 +74,7 @@ lundcrit<-function(a, n, q) {
   return(crit)
 }
 
+#' @rdname lund
 #' @export
 lundprob<-function(crit, n, q){
   # Calculates an alpha value for a matchinv studantized residual

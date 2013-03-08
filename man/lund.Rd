@@ -4,6 +4,8 @@
 \title{Lund Outlier Tests}
 \usage{
   lundcrit(a, n, q)
+
+  lundprob(crit, n, q)
 }
 \arguments{
   \item{a}{Chosen alpha value}
