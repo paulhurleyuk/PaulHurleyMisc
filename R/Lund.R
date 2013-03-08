@@ -1,4 +1,5 @@
 #' Calculate co-efficient of variation
+#' 
 #' @param x a value 
 #' @param na.rm - ignore na's
 #' @return numeric Return the CV
@@ -11,6 +12,7 @@ cv<-function(x, na.rm=FALSE){
 }
 
 #' Calculate the Percentage Bias of a dataframe
+#' 
 #' @param x a value 
 #' @param nominal the nominal value
 #' @return numeric Return the percentage bias of x in terms of nominal
@@ -22,24 +24,23 @@ pBias<-function(x, nominal, na.rm=FALSE){
   return(pBias)
 }
 
-#' Improved Significant Figures Function
-#' @param x Vector of numeric values 
-#' @param digits Number of significant digits to display
-#' @return Text string of the value to the correct sig figs
-#' @author Paul Hurley
-#' @export
-fsignif<-function(x, digits=3){
-  return(formatC(signif(x, digits=digits), digits=digits,format="fg", 
-                 flag="#"))
-}
-
-
-#' Calculates a Critical value for Outlier Test according to Lund
+#' Lund Outlier Tests
 #' 
-#' @references Richard E Lund. Tables for an approximate test for outliers in linear models.
+#' Calculates a Critical value / probability for Outlier Test according to Lund
+#' 
+#' Calculates a critical value to compare against the studentised residual for 
+#' outlier testing in a polynomial regression.  \code{lundprob} calculates the probability
+#' of a given studentisted residual being an outlier by this method.
+#' 
+#' Generally this method is used to identify (and eliminate) a single value.  If required
+#' the regression is updated and the values re-calculated.
+#' 
+#' @references 
+#' Richard E Lund. Tables for an approximate test for outliers in linear models.
 #'  Technometrics,17(4):473-476, 1975.
 #' P Prescott. An approximate test for outliers in linear models. Technometrics, 
 #' 17(1):129-132,1975.
+#' 
 #' @param a Chosen alpha value
 #' @param n Number of Data Elements
 #' @param q Number of Independent Variables (including Intercept)

@@ -4,8 +4,15 @@
 ###############################################################################
 
 
+#' Inverse Quadratic Roots
+#' 
 #' Calculate the inverse of a quadratic function y=ax^2+bx+c (ie find x when given y)
-#' Gives NaN with non real solutions
+#' Gives NaN with non real solutions.
+#' 
+#' \code{invquad} is used to perform back caluclation of concentration values when 
+#' performing quadratic regression.  The so-caled 'Regression Problem'
+#' 
+#' @usage invquad(a, b, c,y, roots="both", xmin=-Inf, xmax=Inf, na.rm=FALSE)
 #' 
 #' @param a The x^2 coefficient
 #' @param b The x coefficient

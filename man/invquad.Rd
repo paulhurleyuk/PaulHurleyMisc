@@ -1,10 +1,9 @@
 \name{invquad}
 \alias{invquad}
-\title{Calculate the inverse of a quadratic function y=ax^2+bx+c (ie find x when given y)
-Gives NaN with non real solutions}
+\title{Inverse Quadratic Roots}
 \usage{
-  invquad(a, b, c, y, roots = "both", xmin = (-Inf),
-    xmax = (Inf), na.rm = FALSE)
+  invquad(a, b, c,y, roots="both", xmin=-Inf, xmax=Inf,
+    na.rm=FALSE)
 }
 \arguments{
   \item{a}{The x^2 coefficient}
@@ -31,7 +30,12 @@ Gives NaN with non real solutions}
 \description{
   Calculate the inverse of a quadratic function y=ax^2+bx+c
   (ie find x when given y) Gives NaN with non real
-  solutions
+  solutions.
+}
+\details{
+  \code{invquad} is used to perform back caluclation of
+  concentration values when performing quadratic
+  regression.  The so-caled 'Regression Problem'
 }
 \examples{
 invquad(1,1,-10,0)

@@ -1,7 +1,7 @@
 \name{lundcrit}
 \alias{lundcrit}
 \alias{lundprob}
-\title{Calculates a Critical value for Outlier Test according to Lund}
+\title{Lund Outlier Tests}
 \usage{
   lundcrit(a, n, q)
 }
@@ -17,8 +17,19 @@
   The Critical Value
 }
 \description{
-  Calculates a Critical value for Outlier Test according to
-  Lund
+  Calculates a Critical value / probability for Outlier
+  Test according to Lund
+}
+\details{
+  Calculates a critical value to compare against the
+  studentised residual for outlier testing in a polynomial
+  regression.  \code{lundprob} calculates the probability
+  of a given studentisted residual being an outlier by this
+  method.
+
+  Generally this method is used to identify (and eliminate)
+  a single value.  If required the regression is updated
+  and the values re-calculated.
 }
 \examples{
 data(phosphorus)
