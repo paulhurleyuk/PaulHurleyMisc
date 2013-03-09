@@ -15,3 +15,4 @@ Collate:
     'invquad.R'
     'pastewrap.R'
     'fsignif.R'
+    'objects.R'
