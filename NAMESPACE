@@ -1,4 +1,6 @@
 export(.ls.objects)
+export(assayvar)
+export(avar)
 export(cleandf)
 export(cleanf)
 export(cv)

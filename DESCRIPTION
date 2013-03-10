@@ -16,3 +16,4 @@ Collate:
     'pastewrap.R'
     'fsignif.R'
     'objects.R'
+    'aov_confint.R'
