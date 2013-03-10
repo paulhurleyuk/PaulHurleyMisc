@@ -19,8 +19,10 @@
 #' @author Paul Hurley
 #' @export
 #' @examples 
-#' #Using the BGBottles data from Burdick and Graybill Page 62
-#' assayvar(dataf=BGBottles, afactor="Machine", aresponse="weight")
+#' #Using the balanced BGBottles data from Burdick and Graybill Page 62
+#' avar(dataf=BGBottles, afactor="Machine", aresponse="weight")
+#' #Using the unbalanced bull data from Burdick and Graybill Page 69
+#' avar(dataf=bull, afactor="bull", aresponse="Percentage")
 avar<-function(dataf, afactor, aresponse, aconfidence=95, digits=3, debug=FALSE){
 	dataf<-subset(dataf,!is.na(with(dataf,get(aresponse))))
 	nmissing<-function(x) sum(!is.na(x))

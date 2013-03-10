@@ -33,3 +33,35 @@ NULL
 #' @format A data frame with 18 rows and 4 variables
 #' @name lundanalyte
 NULL
+
+#' Bottle data from Graybill and Burdick
+#' #' 
+#' balanced anova data from Graybill and Burdick pg62
+#'  Consists of 12 records of weights from 4 bottle manufacturing machines
+#' 
+#' \itemize{
+#'   \item Mchine-Machine number
+#'   \item weight - Weight of bottle produced
+#' }
+#' 
+#' @docType data
+#' @keywords datasets
+#' @format A data frame with 35 rows and 2 variables
+#' @name BGBottles
+NULL
+
+#' Bull data from Graybill and Burdick
+#' #' 
+#' unbalanced anova data from Graybill and Burdick pg69
+#'  Consists of 35 records of Percentage yields from 6 bulls
+#' 
+#' \itemize{
+#'   \item bull - Bull number 
+#'   \item Percentage - Percentage yield
+#' }
+#' 
+#' @docType data
+#' @keywords datasets
+#' @format A data frame with 35 rows and 2 variables
+#' @name bull
+NULL
