@@ -43,27 +43,23 @@
 	out
 }
 
-
-#' lsos
-#' 
 #' List R Objects by Size
 #' 
 #' Thanks to http://stackoverflow.com/questions/1358003/tricks-to-manage-the-available-memory-in-an-r-session
-#' @param ... 
+#' @param ...  extra parameters to pass to ls
 #' @param n Number of Objects to List
 #' @return A datafrmae listing objects
-#' @author gb02413
+#' @author Paul Hurley
 #' @export
 lsos <- function(..., n=10) {
 	.ls.objects(..., order.by="Size", decreasing=TRUE, head=TRUE, n=n)
 }
 
 
-#' proc.time.to.data.frame
-#' 
 #' Convert a \code{proc.time} result to a dataframe
-#' @param x 
-#' @param name 
+#' 
+#' @param x a proc.time result
+#' @param name a charachter string for the name of the result
 #' @return a dataframe
 #' 
 #' @author paul
@@ -80,4 +76,3 @@ proc.time.to.data.frame<-function(x, name=NA){
 	}
 	return(result)
 }
-
